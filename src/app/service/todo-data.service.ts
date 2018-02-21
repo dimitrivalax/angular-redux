@@ -1,5 +1,5 @@
-import { Injectable, Output, EventEmitter } from "@angular/core";
-import { Todo } from "../model/todo.model";
+import { Injectable, Output, EventEmitter } from '@angular/core';
+import { Todo } from '../model/todo.model';
 
 @Injectable()
 export class TodoDataService {
@@ -27,7 +27,7 @@ export class TodoDataService {
   // Simulate DELETE /todos/:id
   deleteTodoById(id: number) {
     this.todos = this.todos.filter(todo => todo.id !== id);
-    console.log(id + " : deleted !!!");
+    console.log(id + ' : deleted !!!');
     this.todoEvent.emit(this.todos);
   }
 
