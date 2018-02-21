@@ -1,0 +1,10 @@
+<footer class="footer" >
+  <span class="todo-count"><strong>{{countTodo()}}</strong> {{todos.length == 1 ? 'item' : 'items'}} left.    
+    Complete :  <strong>{{countCompleteTodo()}}</strong></span>
+    <div class="filters">
+        <a (click)="resetFilter()">all</a>
+        <a (click)="filter(true)">complete</a>
+        <a (click)="filter(false)">uncomplete</a>
+    </div>
+    
+</footer> 
